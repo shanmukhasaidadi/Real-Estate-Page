@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header{
+  /* height: 30%; */
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: start; */
+position: fixed;
+top: 0;
+z-index: 20;
+}
+.header li{
+list-style: none;
+
+}
+.menu{
+  display: flex;
+  align-items: center;
+  gap:1.5rem;
+}
+:root{
+--lh: 2rem;
+}
+p{
+line-height: var(--lh);
+}
+/* .truncate-overflow {
+--max-lines: 12;
+position: relative;
+max-height: calc(var(--lh) * var(--max-lines));
+overflow: hidden;
+padding-right: 2rem;
+} */
+.truncate-overflow {
+--max-lines: 2;
+max-height: calc(var(--lh) * var(--max-lines));
+
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 4;
+overflow: hidden;
+/* background-color: #a6a9ab */
+}
+/* .truncate-overflow::after {
+content: "...mo";
+position: absolute;
+right: 0;
+width: 1rem;
+height: 1rem;
+background: red;
+} */
+.hero{
+  background-image: url('../images/herobg.png');
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight:500;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 400;
+}
